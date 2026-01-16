@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situs Dalam Pengembangan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+        .bg-gradient-mesh {
+            background-color: #0f172a;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(30, 64, 175, 0.2) 0, transparent 50%), 
+                radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.2) 0, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-gradient-mesh text-white min-h-screen flex items-center justify-center p-6 font-sans">
+
+    <div class="max-w-xl w-full text-center">
+        <!-- Ikon Minimalis -->
+        <div class="mb-10 flex justify-center">
+            <div class="animate-float">
+                <i class="fas fa-tools text-6xl text-blue-500 opacity-80"></i>
+            </div>
+        </div>
+
+        <!-- Konten Teks -->
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
+            Sedang <span class="text-blue-400">Dikembangkan</span>
+        </h1>
+        
+        <p class="text-lg text-gray-400 mb-12 leading-relaxed">
+            Mohon bersabar, kami sedang menyiapkan sesuatu yang baru untuk Anda. Situs ini akan segera kembali dalam waktu dekat.
+        </p>
+
+        <!-- Garis Pemisah Sederhana -->
+        <div class="w-16 h-1 bg-blue-500/30 mx-auto rounded-full mb-12"></div>
+
+        <!-- Sosial Media & Footer -->
+        <div class="flex flex-col items-center gap-6">
+            <div class="flex gap-8 text-xl text-gray-500">
+                <a href="#" class="hover:text-blue-400 transition-colors"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-blue-400 transition-colors"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-blue-400 transition-colors"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p class="text-gray-600 text-sm tracking-wide uppercase">Sampai Jumpa Segera</p>
+        </div>
+    </div>
+
+</body>
+</html>
